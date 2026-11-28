@@ -7,7 +7,7 @@ class ENGINE_API IRenderable
 public:
 	virtual ~IRenderable() = default;
 
-	virtual void Render() = 0;
+	virtual void Render() PURE;
 
 	static void SetRenderTarget(HDC _DC);
 	static HDC GetRenderTarget();

@@ -1,52 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Etc">
+      <UniqueIdentifier>{f8b419b8-37a0-4dc5-bc90-999cbc8809a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Etc\Headers">
+      <UniqueIdentifier>{1386f5c2-c60f-453b-96f5-7cc072ee2c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Etc\Resource">
+      <UniqueIdentifier>{aef78532-91cb-4a24-a250-693bb9dde43c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{59C0D76B-5479-5704-879F-B45D0A3D4F10}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Editor.h">
+      <Filter>Main</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
+      <Filter>Etc\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Etc\Headers</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Editor.h">
-      <Filter>Source Files\Launch</Filter>
+      <Filter>Etc\Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files\Launch</Filter>
+      <Filter>Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Editor.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="small.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Editor.ico">
-      <Filter>Resource Files</Filter>
+      <Filter>Etc\Resource</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>Etc\Resource</Filter>
     </Image>
   </ItemGroup>
-
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{E34D17F2-1CB7-5DC5-891D-943B7EC6E22B}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{1493B673-6956-572A-B175-5E486E1B15C8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{748E6725-F20D-5880-94BB-24797D7935F9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Launch">
-      <UniqueIdentifier>{59C0D76B-5479-5704-879F-B45D0A3D4F10}</UniqueIdentifier>
-    </Filter>
+    <ResourceCompile Include="Editor.rc">
+      <Filter>Etc\Resource</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

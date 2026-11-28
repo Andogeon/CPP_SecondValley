@@ -1,124 +1,121 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="DllMain">
+      <UniqueIdentifier>{33fcc47e-aa38-495b-a838-8a2e53b7df84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DllMain\Pch">
+      <UniqueIdentifier>{92a39de7-c8b2-4c62-a4e9-492081a9b3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DllMain\Etc">
+      <UniqueIdentifier>{520eeb8c-259d-4b68-952c-1c4162efe337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor">
+      <UniqueIdentifier>{6DDE3909-5714-58AC-B622-82DAACE739F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{da14b237-642b-48b0-b3ef-c2fdc17db282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Materials">
+      <UniqueIdentifier>{F77CA487-1FD8-4EE0-9F76-6D239433C680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Texture">
+      <UniqueIdentifier>{993B4C2E-CB23-43D0-81B3-35EAC9BF0D2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Texture\BMP">
+      <UniqueIdentifier>{DCFB617B-B8E5-48C3-BFB8-DF5D19C3335D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Texture\PNG">
+      <UniqueIdentifier>{90ED3658-2A45-4DF7-8EF7-E334BC40BDD4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Content">
+      <UniqueIdentifier>{2A16A01F-D64C-5304-BCA4-4AA6083C6297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProjectSetting">
+      <UniqueIdentifier>{5135ebac-a3a2-41a8-a279-f71fc9114221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actor\Player">
+      <UniqueIdentifier>{772DCDF1-4913-5AB4-BDE1-D3782A7DE522}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ProjectName.uproject" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CombatCharacter.h">
-      <Filter>Source Files\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Player.h">
+      <Filter>Actor\Player</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
+      <Filter>DllMain\Pch</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>DllMain\Etc</Filter>
     </ClInclude>
     <ClInclude Include="ProjectName.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Source Files\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Source Files\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="StageBoss.h">
-      <Filter>Source Files\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemySpawner.h">
-      <Filter>Source Files\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="FormationSpawner.h">
-      <Filter>Source Files\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="Bullet.h">
-      <Filter>Source Files\Actor</Filter>
+      <Filter>ProjectSetting</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CombatCharacter.cpp">
-      <Filter>Source Files\Actor</Filter>
-    </ClCompile>
-    <ClCompile Include="ProjectName.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
-      <Filter>Source Files\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Source Files\Actor</Filter>
-    </ClCompile>
-    <ClCompile Include="StageBoss.cpp">
-      <Filter>Source Files\Actor</Filter>
-    </ClCompile>
-    <ClCompile Include="EnemySpawner.cpp">
-      <Filter>Source Files\Actor</Filter>
-    </ClCompile>
-    <ClCompile Include="FormationSpawner.cpp">
-      <Filter>Source Files\Actor</Filter>
-    </ClCompile>
-    <ClCompile Include="Bullet.cpp">
-      <Filter>Source Files\Actor</Filter>
+      <Filter>Actor\Player</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>DllMain</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>DllMain\Pch</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectModule.cpp">
+      <Filter>ProjectSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectName.cpp">
+      <Filter>ProjectSetting</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup><ClCompile Include="ProjectModule.cpp"><Filter>Source Files</Filter></ClCompile></ItemGroup>
   <ItemGroup>
-    <None Include="Content\Levels\MainLevel.umap"><Filter>Content</Filter></None>
-    <None Include="Content\Levels\SecondLevel.umap"><Filter>Content</Filter></None>
-    <None Include="Content\Levels\Level3.umap"><Filter>Content</Filter></None>
+    <None Include="Content\Levels\MainLevel.umap">
+      <Filter>Resource\Content</Filter>
+    </None>
+    <None Include="Content\Levels\SecondLevel.umap">
+      <Filter>Resource\Content</Filter>
+    </None>
+    <None Include="Content\Levels\Level3.umap">
+      <Filter>Resource\Content</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\Materials\Enemy.material"><Filter>Resource Files\Materials</Filter></None>
-    <None Include="Content\Materials\Player.material"><Filter>Resource Files\Materials</Filter></None>
-    <None Include="Content\Materials\StageBoss.material"><Filter>Resource Files\Materials</Filter></None>
-    <None Include="Content\Texture\BMP\Bullet.bmp"><Filter>Resource Files\Texture\BMP</Filter></None>
-    <None Include="Content\Texture\BMP\Enemy.bmp"><Filter>Resource Files\Texture\BMP</Filter></None>
-    <None Include="Content\Texture\BMP\Player.bmp"><Filter>Resource Files\Texture\BMP</Filter></None>
-    <None Include="Content\Texture\BMP\StageBoss.bmp"><Filter>Resource Files\Texture\BMP</Filter></None>
-    <None Include="Content\Texture\Bullet.png"><Filter>Resource Files\Texture\PNG</Filter></None>
-    <None Include="Content\Texture\Enemy.png"><Filter>Resource Files\Texture\PNG</Filter></None>
-    <None Include="Content\Texture\Player.png"><Filter>Resource Files\Texture\PNG</Filter></None>
-    <None Include="Content\Texture\StageBoss.png"><Filter>Resource Files\Texture\PNG</Filter></None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Filter Include="Content">
-      <UniqueIdentifier>{2A16A01F-D64C-5304-BCA4-4AA6083C6297}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{9DA39FEE-A924-53B8-A913-590E0DF1E59E}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{89026F9E-90F9-5C2F-B246-1C03585FA7D5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\Materials">
-      <UniqueIdentifier>{F77CA487-1FD8-4EE0-9F76-6D239433C680}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\Texture">
-      <UniqueIdentifier>{993B4C2E-CB23-43D0-81B3-35EAC9BF0D2A}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\Texture\BMP">
-      <UniqueIdentifier>{DCFB617B-B8E5-48C3-BFB8-DF5D19C3335D}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\Texture\PNG">
-      <UniqueIdentifier>{90ED3658-2A45-4DF7-8EF7-E334BC40BDD4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{3BDFA829-7F6E-54D6-A989-C500404FD304}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Actor">
-      <UniqueIdentifier>{6DDE3909-5714-58AC-B622-82DAACE739F2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Player">
-      <UniqueIdentifier>{772DCDF1-4913-5AB4-BDE1-D3782A7DE522}</UniqueIdentifier>
-    </Filter>
+    <None Include="Content\Materials\Enemy.material">
+      <Filter>Resource\Materials</Filter>
+    </None>
+    <None Include="Content\Materials\Player.material">
+      <Filter>Resource\Materials</Filter>
+    </None>
+    <None Include="Content\Materials\StageBoss.material">
+      <Filter>Resource\Materials</Filter>
+    </None>
+    <None Include="Content\Texture\BMP\Bullet.bmp">
+      <Filter>Resource\Texture\BMP</Filter>
+    </None>
+    <None Include="Content\Texture\BMP\Enemy.bmp">
+      <Filter>Resource\Texture\BMP</Filter>
+    </None>
+    <None Include="Content\Texture\BMP\Player.bmp">
+      <Filter>Resource\Texture\BMP</Filter>
+    </None>
+    <None Include="Content\Texture\BMP\StageBoss.bmp">
+      <Filter>Resource\Texture\BMP</Filter>
+    </None>
+    <None Include="Content\Texture\Bullet.png">
+      <Filter>Resource\Texture\PNG</Filter>
+    </None>
+    <None Include="Content\Texture\Enemy.png">
+      <Filter>Resource\Texture\PNG</Filter>
+    </None>
+    <None Include="Content\Texture\Player.png">
+      <Filter>Resource\Texture\PNG</Filter>
+    </None>
+    <None Include="Content\Texture\StageBoss.png">
+      <Filter>Resource\Texture\PNG</Filter>
+    </None>
   </ItemGroup>
 </Project>

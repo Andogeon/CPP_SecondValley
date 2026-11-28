@@ -91,6 +91,8 @@ using TCHAR = wchar_t;
 #define KEY_RELEASED(_Key)      KEY_CONFIRM(_Key, EKeyState::Released)
 #define KEY_NONE(_Key)          KEY_CONFIRM(_Key, EKeyState::None)
 
+#define PURE = 0
+
 /*
 	#define KEY_PRESSED(_Key)   InputEngineSystem::GetInstance()->IsKeyPressed(_Key)
 	#define KEY_REPEAT(_Key)    InputEngineSystem::GetInstance()->IsKeyRepeat(_Key)
@@ -128,3 +130,9 @@ using TCHAR = wchar_t;
 #ifndef ensureMsgf
 #define ensureMsgf(Expression, Format, ...) (!!(Expression))
 #endif
+
+
+#pragma warning(disable: 4275)
+#pragma warning(disable: 4251)
+#pragma warning(disable: 4244)
+#pragma warning(disable: 4819)

@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Unity Camera_2026111900 (2)\\",
+  "WorkspaceRootPath": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Second_Vally\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CF6A084-2875-462F-915F-30169C82D6EA}|Game\\Programs\\Client\\Client.vcxproj|D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Unity Camera_2026111900 (2)\\Game\\Programs\\Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8CF6A084-2875-462F-915F-30169C82D6EA}|Game\\Programs\\Client\\Client.vcxproj|solutionrelative:Game\\Programs\\Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D522D384-93D4-4757-BB14-4E0CE0474D2D}|Game\\ProjectName\\ProjectName.vcxproj|D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Second_Vally\\Game\\ProjectName\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D522D384-93D4-4757-BB14-4E0CE0474D2D}|Game\\ProjectName\\ProjectName.vcxproj|solutionrelative:Game\\ProjectName\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D522D384-93D4-4757-BB14-4E0CE0474D2D}|Game\\ProjectName\\ProjectName.vcxproj|D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Second_Vally\\Game\\ProjectName\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D522D384-93D4-4757-BB14-4E0CE0474D2D}|Game\\ProjectName\\ProjectName.vcxproj|solutionrelative:Game\\ProjectName\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Unity Camera_2026111900 (2)\\Game\\Programs\\Client\\main.cpp",
-              "RelativeDocumentMoniker": "Game\\Programs\\Client\\main.cpp",
-              "ToolTip": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Unity Camera_2026111900 (2)\\Game\\Programs\\Client\\main.cpp",
-              "RelativeToolTip": "Game\\Programs\\Client\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABJAAAAAAAAAA==",
+              "Title": "Player.h",
+              "DocumentMoniker": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Second_Vally\\Game\\ProjectName\\Player.h",
+              "RelativeDocumentMoniker": "Game\\ProjectName\\Player.h",
+              "ToolTip": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Second_Vally\\Game\\ProjectName\\Player.h",
+              "RelativeToolTip": "Game\\ProjectName\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-28T12:24:40.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Second_Vally\\Game\\ProjectName\\Player.cpp",
+              "RelativeDocumentMoniker": "Game\\ProjectName\\Player.cpp",
+              "ToolTip": "D:\\\uD3EC\uD2B8\uD3F4\uB9AC\uC624\\CPP_SecondValley\\Second_Vally\\Game\\ProjectName\\Player.cpp",
+              "RelativeToolTip": "Game\\ProjectName\\Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-11-28T07:53:54.014Z",
+              "WhenOpened": "2026-11-28T12:24:39.173Z",
               "EditorCaption": ""
             }
           ]

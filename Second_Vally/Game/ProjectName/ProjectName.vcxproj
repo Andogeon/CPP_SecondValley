@@ -159,20 +159,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CombatCharacter.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="StageBoss.h" />
-    <ClInclude Include="EnemySpawner.h" />
-    <ClInclude Include="FormationSpawner.h" />
-    <ClInclude Include="Bullet.h" />
     <ClInclude Include="ProjectName.h" />
     <None Include="ProjectName.uproject" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CombatCharacter.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -181,11 +174,6 @@
     </ClCompile>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="StageBoss.cpp" />
-    <ClCompile Include="EnemySpawner.cpp" />
-    <ClCompile Include="FormationSpawner.cpp" />
-    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="ProjectName.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -204,7 +192,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-  <ItemGroup><ClCompile Include="ProjectModule.cpp" /></ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProjectModule.cpp" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Content\Levels\MainLevel.umap" />
     <None Include="Content\Levels\SecondLevel.umap" />

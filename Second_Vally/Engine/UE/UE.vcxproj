@@ -166,7 +166,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AppTimeEngineSystem.h" />
-    <ClInclude Include="FAppTimeEngineSystem.h" />
     <ClInclude Include="InputEngineSystem.h" />
     <ClInclude Include="Actor.h" />
     <ClInclude Include="ActorComponent.h" />
@@ -236,7 +235,6 @@
   <ItemGroup>
     <ClCompile Include="Renderable.cpp" />
     <ClCompile Include="AppTimeEngineSystem.cpp" />
-    <ClCompile Include="FAppTimeEngineSystem.cpp" />
     <ClCompile Include="InputEngineSystem.cpp" />
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="ActorComponent.cpp" />
@@ -274,11 +272,21 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-  <ItemGroup><ClInclude Include="ModuleInterface.h" /></ItemGroup>
-  <ItemGroup><ClInclude Include="ModuleManager.h" /></ItemGroup>
-  <ItemGroup><ClCompile Include="ModuleManager.cpp" /></ItemGroup>
-  <ItemGroup><ClInclude Include="ResourceEngineSystem.h" /></ItemGroup>
-  <ItemGroup><ClCompile Include="ResourceEngineSystem.cpp" /></ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ModuleInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ModuleManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ModuleManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ResourceEngineSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ResourceEngineSystem.cpp" />
+  </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetResource.h" />
     <ClCompile Include="AssetResource.cpp" />

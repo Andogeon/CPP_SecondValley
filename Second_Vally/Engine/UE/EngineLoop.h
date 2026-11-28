@@ -7,7 +7,7 @@ class IEngineLoop
 public:
     virtual ~IEngineLoop() = default;
 
-    virtual HRESULT Initialize(POINT _Resolution = {}) = 0;
-    virtual void Deinitialize() = 0;
-    virtual void Progress() = 0;
+    virtual HRESULT Initialize(POINT _Resolution = {}) PURE;
+    virtual void Deinitialize() PURE;
+    virtual void Progress() PURE;
 };

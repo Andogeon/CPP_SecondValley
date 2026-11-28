@@ -17,7 +17,7 @@ public:
 
 protected:
     AssetResource() = default;
-    virtual bool LoadResource(const std::filesystem::path& _FilePath, FString& _Error) = 0;
+    virtual bool LoadResource(const std::filesystem::path& _FilePath, FString& _Error) PURE;
 
 private:
     FString __Key;
