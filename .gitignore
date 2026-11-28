@@ -1,34 +1,97 @@
+
+# ========================================
 # Prerequisites
+# ========================================
 *.d
 
-# Compiled Object files
+# ========================================
+# Compiled Object Files
+# ========================================
 *.slo
 *.lo
 *.o
 *.obj
 
+# ========================================
 # Precompiled Headers
+# ========================================
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# ========================================
+# Compiled Libraries
+# ========================================
 *.so
 *.dylib
-*.dll
 
-# Fortran module files
+# ========================================
+# Fortran Module Files
+# ========================================
 *.mod
 *.smod
 
-# Compiled Static libraries
+# ========================================
+# Compiled Static Libraries
+# ========================================
 *.lai
 *.la
 *.a
-*.lib
 
+# ========================================
 # Executables
+# ========================================
 *.exe
 *.out
 *.app
+
+# ========================================
+# Visual Studio
+# ========================================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 *.vsidx
-*.vsidx
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.sdf
+*.opensdf
+*.ipch
+
+# ========================================
+# Build Outputs
+# ========================================
+/Second_Vally/Game/ProjectName/Intermediate/
+/Second_Vally/Engine/Intermediate/UE/Win64/
+/Second_Vally/Engine/Binaries/
+/Second_Vally/Game/ProjectName/Binaries/
+
+# ========================================
+# Compiled Debug Files
+# ========================================
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.tlog/
+*.lastbuildstate
+
+# ========================================
+# Temporary Files
+# ========================================
+*.cache
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ========================================
+# OS Generated Files
+# ========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
