@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d694771a-a68d-404e-bc7e-a1821b5d0bce}</ProjectGuid>
+    <RootNamespace>UE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(SolutionDir)Engine\Binaries\Win64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Engine\Intermediate\$(MSBuildProjectName)\Win64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(SolutionDir)Engine\Binaries\Win64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Engine\Intermediate\$(MSBuildProjectName)\Win64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(SolutionDir)Engine\Binaries\Win64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Engine\Intermediate\$(MSBuildProjectName)\Win64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <OutDir>$(SolutionDir)Engine\Binaries\Win64\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Engine\Intermediate\$(MSBuildProjectName)\Win64\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;UE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;UE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;UE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;UE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AppTimeEngineSystem.h" />
+    <ClInclude Include="FAppTimeEngineSystem.h" />
+    <ClInclude Include="InputEngineSystem.h" />
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="ActorComponent.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="EngineBaseTypes.h" />
+    <ClInclude Include="EngineLoop.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="CoreMinimal.h" />
+    <ClInclude Include="EngineMinimal.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="LaunchEngineLoop.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LevelEngineSystem.h" />
+    <ClInclude Include="PathEngineSystem.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Pawn.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Renderable.h" />
+    <ClInclude Include="T_Singleton.h" />
+    <ClInclude Include="T_RAIIPattern_ThreadGuard.h" />
+    <ClInclude Include="T_RAIIPattern_ThreadGuard.inl" />
+    <ClInclude Include="T_EngineSystem.h" />
+    <ClInclude Include="Template.h" />
+    <ClInclude Include="Tickable.h" />
+    <ClInclude Include="EngineSystem.h" />
+    <ClInclude Include="CoreTypes.h" />
+    <ClInclude Include="NameTypes.h" />
+    <ClInclude Include="UnrealString.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="StringUtility.h" />
+    <ClInclude Include="Math\Axis.h" />
+    <ClInclude Include="Math\Box.h" />
+    <ClInclude Include="Math\Color.h" />
+    <ClInclude Include="Math\InterpCurve.h" />
+    <ClInclude Include="Math\InterpCurvePoint.h" />
+    <ClInclude Include="Math\Interval.h" />
+    <ClInclude Include="Math\IntPoint.h" />
+    <ClInclude Include="Math\IntRect.h" />
+    <ClInclude Include="Math\MathFwd.h" />
+    <ClInclude Include="Math\Matrix.h" />
+    <ClInclude Include="Math\Plane.h" />
+    <ClInclude Include="Math\PolynomialRootSolver.h" />
+    <ClInclude Include="Math\Quat.h" />
+    <ClInclude Include="Math\QuatRotationTranslationMatrix.h" />
+    <ClInclude Include="Math\RandomStream.h" />
+    <ClInclude Include="Math\RotationMatrix.h" />
+    <ClInclude Include="Math\RotationTranslationMatrix.h" />
+    <ClInclude Include="Math\Rotator.h" />
+    <ClInclude Include="Math\ScalarRegister.h" />
+    <ClInclude Include="Math\Sphere.h" />
+    <ClInclude Include="Math\Transform.h" />
+    <ClInclude Include="Math\TransformNonVectorized.h" />
+    <ClInclude Include="Math\TransformVectorized.h" />
+    <ClInclude Include="Math\TwoVectors.h" />
+    <ClInclude Include="Math\UnrealMath.h" />
+    <ClInclude Include="Math\UnrealMathFPU.h" />
+    <ClInclude Include="Math\UnrealMathSSE.h" />
+    <ClInclude Include="Math\UnrealMathUtility.h" />
+    <ClInclude Include="Math\UnrealMemory.h" />
+    <ClInclude Include="Math\Vector.h" />
+    <ClInclude Include="Math\Vector2D.h" />
+    <ClInclude Include="Math\Vector4.h" />
+    <ClInclude Include="Math\VectorRegister.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Renderable.cpp" />
+    <ClCompile Include="AppTimeEngineSystem.cpp" />
+    <ClCompile Include="FAppTimeEngineSystem.cpp" />
+    <ClCompile Include="InputEngineSystem.cpp" />
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="ActorComponent.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LevelEngineSystem.cpp" />
+    <ClCompile Include="PathEngineSystem.cpp" />
+    <ClCompile Include="NameTypes.cpp" />
+    <ClCompile Include="UnrealString.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="LaunchEngineLoop.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Pawn.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Math\UnrealMath.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Actor.inl" />
+    <None Include="Level.inl" />
+    <None Include="UnrealString.inl" />
+    <None Include="Math\Matrix.inl" />
+    <None Include="Math\UnrealMathVectorCommon.h.inl" />
+    <None Include="Math\UnrealMathVectorConstants.h.inl" />
+    <None Include="T_Singleton.inl" />
+    <None Include="T_EngineSystem.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup><ClInclude Include="ModuleInterface.h" /></ItemGroup>
+  <ItemGroup><ClInclude Include="ModuleManager.h" /></ItemGroup>
+  <ItemGroup><ClCompile Include="ModuleManager.cpp" /></ItemGroup>
+  <ItemGroup><ClInclude Include="ResourceEngineSystem.h" /></ItemGroup>
+  <ItemGroup><ClCompile Include="ResourceEngineSystem.cpp" /></ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetResource.h" />
+    <ClCompile Include="AssetResource.cpp" />
+    <ClInclude Include="Texture.h" />
+    <ClCompile Include="Texture.cpp" />
+    <ClInclude Include="Sound.h" />
+    <ClCompile Include="Sound.cpp" />
+    <ClInclude Include="Material.h" />
+    <ClCompile Include="Material.cpp" />
+    <None Include="ResourceEngineSystem.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionEngineSystem.h" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="CollisionEngineSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EventEngineSystem.h" />
+    <ClCompile Include="EventEngineSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CameraEngineSystem.h" />
+    <ClCompile Include="CameraEngineSystem.cpp" />
+  </ItemGroup>
+</Project>
